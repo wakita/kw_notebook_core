@@ -56,6 +56,7 @@ def new_admonition(category, default_title, color='#dfb5b4'):
 
 warn = new_admonition('warn', '警告')
 hint = new_admonition('hint', 'ヒント', '#94b6e2')
+why  = new_admonition('why', 'なんでだろう？', '#b694e2')
 
 def notebook_caution():
     warn('''<p>ほかのひとから共有されたノートブックの所有権は共有してくれた人に属します。そういうノートブックも編集できるので、あたかも所有権が自分にあるかのように錯覚します。でも、せっかく作業した結果を保存しようとしても、所有権がほかの人にあるノートブックは保存できず、エラーになってしまいます。
