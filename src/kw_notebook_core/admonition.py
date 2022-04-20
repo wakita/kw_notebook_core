@@ -68,6 +68,7 @@ warn = new_admonition('warn', '警告', color='#f99')
 hint = new_admonition('hint', 'ヒント', color='#9be')
 quiz = new_admonition('quiz', 'クイズ', color='purple')
 why  = new_admonition('why', 'なんでだろう？', color='#8d8')
+column = new_admonition('column', 'コラム', color='88d')
 _english_ = new_admonition('words_and_phrases', '英語の語義', color='#aaa')
 def english(word, definition):
     _english_(definition, f'"{word}" の意味')
