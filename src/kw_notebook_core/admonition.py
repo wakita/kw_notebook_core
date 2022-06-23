@@ -64,10 +64,11 @@ def notebook_caution():
 
     <p>以前に作業したノートブックは、<code>Colab Notebooks</code>フォルダから該当するノートブックを探して開けば、作業を継続できます。''',
         title='超重要：落とし穴に注意')
+section = new_admonition('section', '節', color='#c82506')
 warn = new_admonition('warn', '警告', color='#f99')
 hint = new_admonition('hint', 'ヒント', color='#9be')
 quiz = new_admonition('quiz', 'クイズ', color='purple')
-why  = new_admonition('why', 'なんでだろう？', color='#8d8')
+why  = new_admonition('why', 'なんでだろう？', color='#b5dfb4')
 column = new_admonition('column', 'コラム', color='#88d')
 _english_ = new_admonition('words_and_phrases', '英語の語義', color='#aaa')
 def english(word, definition):
