@@ -13,7 +13,7 @@ div.admonition-{category} { border: 5px solid {color}; }
 div.admonition-title {
     color: #fffff8;
     padding: 0.5em 1em 0.5em 1em;
-    font-size: larger;
+    font-size: x-large;
     font-weight: bold;
 }
 div.admonition-title-{category} { background-color: {color}; }
@@ -55,15 +55,6 @@ def new_admonition(category, default_title, color='#ccc'):
 warn = new_admonition('warn', '警告', color='#f99')
 hint = new_admonition('hint', 'ヒント', color='#9be')
 
-def notebook_caution():
-    warn('''<p>ほかのひとから共有されたノートブックの所有権は共有してくれた人に属します。そういうノートブックも編集できるので、あたかも所有権が自分にあるかのように錯覚します。でも、せっかく作業した結果を保存しようとしても、所有権がほかの人にあるノートブックは保存できず、エラーになってしまいます。
-
-    <p>せっかく編集して自分好みの内容になっても、保存できなければ意味がありません。そこで、ノートブックを共有されたら、作業を始める前に<strong>自分が所有するノートブックとしてDropboxにコピーを保存</strong>しましょう。コピーを保存する方法は初回の資料を見て下さい。
-
-    <p>いったん自分のノートブックとして保存すれば、それを自分の好きに編集し、保存できるようになります。自分のノートブックは Google Drive の <code>Colab Notebooks</code>にフォルダーに保存されます。
-
-    <p>以前に作業したノートブックは、<code>Colab Notebooks</code>フォルダから該当するノートブックを探して開けば、作業を継続できます。''',
-        title='超重要：落とし穴に注意')
 section = new_admonition('section', '節', color='#c82506')
 warn = new_admonition('warn', '警告', color='#f99')
 hint = new_admonition('hint', 'ヒント', color='#9be')
@@ -77,7 +68,7 @@ def english(word, definition):
 def notebook_caution():
     warn('''<p>ほかのひとから共有されたノートブックの所有権は共有してくれた人に属します。そういうノートブックも編集できるので、あたかも所有権が自分にあるかのように錯覚します。でも、せっかく作業した結果を保存しようとしても、所有権がほかの人にあるノートブックは保存できず、エラーになってしまいます。
 
-    <p>せっかく編集して自分好みの内容になっても、保存できなければ意味がありません。そこで、ノートブックを共有されたら、作業を始める前に<strong>自分が所有するノートブックとしてDropboxにコピーを保存</strong>しましょう。コピーを保存する方法は初回の資料を見て下さい。
+    <p>せっかく編集して自分好みの内容になっても、保存できなければ意味がありません。そこで、ノートブックを共有されたら、作業を始める前に<strong>自分が所有するノートブックとしてGoogle Driveにコピーを保存</strong>しましょう。コピーを保存する方法は初回の資料を見て下さい。
 
     <p>いったん自分のノートブックとして保存すれば、それを自分の好きに編集し、保存できるようになります。自分のノートブックは Google Drive の <code>Colab Notebooks</code>にフォルダーに保存されます。
 
