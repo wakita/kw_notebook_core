@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python3
 
 with open('etc/VERSION.txt') as r:
   version = int(r.read()) + 1
@@ -11,5 +11,8 @@ with open('etc/setup.cfg') as r:
 
 import os
 os.system('rm dist/*')
-os.system('/usr/local/bin/python3 -m build')
-os.system('/usr/local/bin/python3 -m twine upload dist/*')
+os.system('python3 -m build')
+os.system('python3 -m twine upload dist/*')
+os.system('git add .')
+os.system(f'git commit -m version-{version}')
+os.system('git push')
